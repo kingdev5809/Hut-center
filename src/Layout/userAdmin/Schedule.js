@@ -8,7 +8,7 @@ function Schedule() {
       <div className="schelduleNav">
         <Navbar />
       </div>
-      <div className="schelduleMain">
+      <div className="schelduleMain container">
         <Calendar />
       </div>
     </div>

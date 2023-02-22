@@ -69,7 +69,7 @@ function Classes() {
       <div className="navbar-box">
         <Navbar />
       </div>
-      <div className="main-box">
+      <div className="main-box container">
         <div className="clases-header">
           <h1>All Classes</h1>
           <button onClick={()=> setVisibleModal('d-block')} >CREATE</button>

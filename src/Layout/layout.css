@@ -28,8 +28,6 @@ body {
   width: 21%;
 }
 .main-box {
-  padding: 50px 30px;
-  width: 75%;
   position: relative;
 }
 body::-webkit-scrollbar {
@@ -304,7 +302,8 @@ body::-webkit-scrollbar {
   border-radius: 10px;
   color: white;
   cursor: pointer;
-  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 .login-page .login-sec main .login-box h3 {
   text-align: center;
@@ -370,7 +369,7 @@ body::-webkit-scrollbar {
 }
 .scheldulePage .schelduleMain {
   margin-left: 380px;
-  width: 75%;
+
   max-width: 75%;
   padding: 30px;
 }
@@ -480,12 +479,13 @@ body::-webkit-scrollbar {
   }
   .classes-page .main-box {
     padding: 10px;
-    width: 65%;
   }
   .classes-page .main-box .items {
     display: block;
   }
 }
+
+/*  */
 .teacherPage {
   display: flex;
 }
@@ -499,7 +499,7 @@ body::-webkit-scrollbar {
   display: flex;
   justify-content: space-between;
   padding-top: 20px;
-  max-width: 80%;
+
   margin: auto;
 }
 .teacherPage .teacherPageMain .teacher-header h1 {
@@ -518,6 +518,7 @@ body::-webkit-scrollbar {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 1rem;
+  margin-top: 30px;
 }
 .teacherPage .teacherPageMain .items .item {
   background-color: #fff;
@@ -628,19 +629,49 @@ body::-webkit-scrollbar {
 .studentsPage .studentsPageMain .main .items .item .item-content .itemBtn div {
   padding: 5px;
 }
-.studentsPage .studentsPageMain .main .items .item .item-content .itemBtn .btn1 {
+.studentsPage
+  .studentsPageMain
+  .main
+  .items
+  .item
+  .item-content
+  .itemBtn
+  .btn1 {
   display: flex;
   align-items: center;
 }
-.studentsPage .studentsPageMain .main .items .item .item-content .itemBtn .btn1 svg {
+.studentsPage
+  .studentsPageMain
+  .main
+  .items
+  .item
+  .item-content
+  .itemBtn
+  .btn1
+  svg {
   width: 1rem;
   margin-right: 5px;
 }
-.studentsPage .studentsPageMain .main .items .item .item-content .itemBtn .btn2 {
+.studentsPage
+  .studentsPageMain
+  .main
+  .items
+  .item
+  .item-content
+  .itemBtn
+  .btn2 {
   display: flex;
   align-items: center;
 }
-.studentsPage .studentsPageMain .main .items .item .item-content .itemBtn .btn2 svg {
+.studentsPage
+  .studentsPageMain
+  .main
+  .items
+  .item
+  .item-content
+  .itemBtn
+  .btn2
+  svg {
   width: 0.75rem;
   margin-right: 5px;
 }

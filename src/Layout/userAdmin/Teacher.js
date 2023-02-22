@@ -11,8 +11,8 @@ function Teacher() {
       <div className="teacherPageNav">
         <Navbar />
       </div>
-      <div className="teacherPageMain">
-        <div className="teacher-header">
+      <div className="teacherPageMain container">
+        <div className="teacher-header ">
           <h1>Responsible staff and teachers</h1>
           <button  onClick={()=> setVisibleModal('d-block')}>CREATE</button>
         </div>
