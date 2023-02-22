@@ -103,7 +103,7 @@ const handleVisibleModal = () => {
         </div>
 
         <div className={visibleModal}>
-          <div className="w-screen"></div>
+          <div onClick={()=> setVisibleModal('d-none')} className="w-screen"></div>
           <div className="modalWindows class-modal">
             <div className="modal-title">
               <h1>Create Class</h1>
