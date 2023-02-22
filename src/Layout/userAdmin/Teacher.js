@@ -14,7 +14,7 @@ function Teacher() {
       <div className="teacherPageMain">
         <div className="teacher-header">
           <h1>Responsible staff and teachers</h1>
-          <button>CREATE</button>
+          <button  onClick={()=> setVisibleModal('d-block')}>CREATE</button>
         </div>
 
         <div className="items container-85">
