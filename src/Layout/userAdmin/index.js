@@ -12,8 +12,8 @@ function Index() {
   return (
     <div>
       <Routes>
-        <Route index element={<App />} />
-        <Route path="admin/scheldule" element={<Schedule />} />
+        <Route  index element={<Schedule />} />
+        <Route  path="admin/scheldule" element={<Schedule />} />
         <Route path="admin/classes" element={<Classes />} />
         <Route path="admin/teacher" element={<Teacher />} />
         <Route path="admin/students" element={<Students />} />
