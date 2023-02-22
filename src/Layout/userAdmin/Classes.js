@@ -10,8 +10,6 @@ import userImg from "../../images/navbar-img/userImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
-
-
 function Classes() {
   const smallData = [
     {
@@ -114,29 +112,28 @@ function Classes() {
                 <div className="flex-3">
                   <div className="modal-input">
                     <label>Select teacher</label>
-                    <div className="select-box">
-                        <div className="select-head">
-                          <p>Yellow</p>
-                          <i><FontAwesomeIcon icon={faChevronUp}/></i>
-                        </div>
-                        <div className="select-content">
-                            <p>Yellow</p>
-                            <p>Red</p>
-                            <p>Green</p>
-                            <p>Blue</p>
-                        </div>
-
-                    </div>
+                    <input type="text" placeholder="Name"/>
                   </div>
 
                   <div className="modal-input">
                     <label>Select BG color</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <select className="w-full" name="selectColor" id="color">
+                      <option value="">Yellow</option>
+                      <option value="red">Red</option>
+                      <option value="green">green</option>
+                      <option value="blue">Blue</option>
+                    </select>
                   </div>
 
                   <div className="modal-input">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Text color</label>
+                    <select className="w-full" name="selectColor" id="color">
+                      <option value="">White</option>
+                      <option value="">Yellow</option>
+                      <option value="red">Red</option>
+                      <option value="green">green</option>
+                      <option value="blue">Blue</option>
+                    </select>
                   </div>
                 </div>
               </form>
