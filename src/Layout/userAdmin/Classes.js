@@ -10,16 +10,8 @@ import userImg from "../../images/navbar-img/userImg.png";
 
 
 function Classes() {
-const [visibleModal, setVisibleModal] = useState('d-none')
 
   
-function createClass() {
-  if (visibleModal == 'd-none') {
-      setVisibleModal('d-block')
-  }else{
-    setVisibleModal('d-none')
-  }
-}
   const smallData = [
     {
       title: "Engelska A2",
@@ -75,7 +67,7 @@ function createClass() {
       <div className="main-box">
         <div className="clases-header">
           <h1>All Classes</h1>
-          <button onClick={createClass} >CREATE</button>
+          <button>CREATE</button>
         </div>
         <div className="items">
           {smallData.map((item) => (
