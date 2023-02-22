@@ -72,7 +72,7 @@ body {
   .navbar-main {
     min-height: 100%;
     ul {
-      padding-top: 50px;
+      padding-top: 25px;
       li {
         padding: 10px 30px;
         &:hover {
@@ -344,7 +344,8 @@ body {
     position: fixed;
   }
   .schelduleMain {
-    margin-left: 320px;
+    margin-left: 350px;
+    width: 80%;
     padding: 30px;
   }
 }
