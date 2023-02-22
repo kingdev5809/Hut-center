@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   deleteIcon,
   editIcon,
@@ -10,7 +10,15 @@ import userImg from "../../images/navbar-img/userImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
+
+
 function Classes() {
+  const [visibleModal,setVisibleModal] = useState()
+
+const handleVisibleModal = () => {
+
+}
+
   const smallData = [
     {
       title: "Engelska A2",
@@ -66,7 +74,7 @@ function Classes() {
       <div className="main-box">
         <div className="clases-header">
           <h1>All Classes</h1>
-          <button>CREATE</button>
+          <button  >CREATE</button>
         </div>
         <div className="items container-85">
           {smallData.map((item) => (
@@ -99,7 +107,7 @@ function Classes() {
           <div className="modalWindows class-modal">
             <div className="modal-title">
               <h1>Create Class</h1>
-              <span>{deleteIcon}</span>
+              <span className="closeModal">{deleteIcon}</span>
             </div>
 
             <div className="modal-content">
