@@ -89,35 +89,39 @@ function Teacher() {
               <form action="">
                 <div className="flex ">
                   <div className="modal-input w-full">
-                    <label>Class name</label>
+                    <label>First name</label>
                     <input className="w-full" type="text" placeholder="Name" />
                   </div>
 
                   <div className="modal-input w-full">
-                    <label>Class name</label>
+                    <label>Last name</label>
                     <input className="w-full" type="text" placeholder="Name" />
                   </div>
                 </div>
 
                 <div className="flex ">
                   <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Telephone </label>
+                    <input
+                      className="w-full"
+                      type="text"
+                      placeholder="Telephone number"
+                    />
                   </div>
 
                   <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Email </label>
+                    <input className="w-full" type="text" placeholder="Email" />
                   </div>
                 </div>
 
                 <div className="modal-input">
-                  <label>Choose Studdents</label>
-                  <input className="w-full" type="text" placeholder="Name" />
+                  <label>Adress</label>
+                  <input className="w-full" type="text" placeholder="Adress" />
                 </div>
                 <div className="modal-input">
-                  <label>Choose Students</label>
-                  <input className="w-full" type="file" placeholder="Name"  />
+                  <label>Image </label>
+                  <input className="w-full" type="file" placeholder="Image" />
                 </div>
 
                 <div className="btn-group">

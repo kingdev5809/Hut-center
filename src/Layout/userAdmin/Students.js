@@ -118,54 +118,58 @@ function Students() {
 
             <div className="modal-content">
               <form action="">
-                <div className="flex ">
+              <div className="flex ">
                   <div className="modal-input w-full">
-                    <label>Class name</label>
+                    <label>First name</label>
                     <input className="w-full" type="text" placeholder="Name" />
                   </div>
 
                   <div className="modal-input w-full">
-                    <label>Class name</label>
+                    <label>Last name</label>
                     <input className="w-full" type="text" placeholder="Name" />
                   </div>
                 </div>
 
                 <div className="flex ">
                   <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Telephone </label>
+                    <input
+                      className="w-full"
+                      type="text"
+                      placeholder="Telephone number"
+                    />
                   </div>
 
                   <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Email </label>
+                    <input className="w-full" type="text" placeholder="Email" />
                   </div>
                 </div>
 
                 <div className="modal-input">
-                  <label>Choose Studdents</label>
-                  <input className="w-full" type="text" placeholder="Name" />
+                  <label>Adress</label>
+                  <input className="w-full" type="text" placeholder="Adress" />
                 </div>
                 <div className="flex ">
                   <div className="modal-input w-full">
-                    <label>Class name</label>
+                    <label>Id number </label>
+                    <input className="w-full" type="text" placeholder="Id number here" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Parent name</label>
+                    <input className="w-full" type="text" placeholder="Parent nam" />
+                  </div>
+                </div>
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Telefon </label>
                     <input className="w-full" type="text" placeholder="Name" />
                   </div>
 
                   <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
-                  </div>
-                </div>
-                <div className="flex ">
-                  <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
-                  </div>
-
-                  <div className="modal-input w-full">
-                    <label>Class name</label>
-                    <input className="w-full" type="text" placeholder="Name" />
+                    <label>Email </label>
+                    <input className="w-full" type="text" placeholder="Email" />
                   </div>
                 </div>
 
