@@ -127,7 +127,6 @@ body::-webkit-scrollbar {
   left: 20%;
 }
 .modalWindows {
-  
   z-index: 999;
   position: absolute;
   top: 1.625rem;
@@ -137,12 +136,12 @@ body::-webkit-scrollbar {
   width: 600px;
   left: 0;
   right: 0;
+  margin: auto;
   .modal-title {
-    
     display: flex;
     justify-content: space-between;
     align-items: center;
-    .closeModal{
+    .closeModal {
       cursor: pointer;
     }
     h1 {
@@ -213,7 +212,7 @@ body::-webkit-scrollbar {
         background-color: transparent;
         cursor: pointer;
       }
-      .btn-2{
+      .btn-2 {
         background-color: #ff7b54;
         border: none;
         color: white;
