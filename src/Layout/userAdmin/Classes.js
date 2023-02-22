@@ -13,7 +13,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 
 
 function Classes() {
-  const [visibleModal,setVisibleModal] = useState()
+  const [visibleModal,setVisibleModal] = useState('d-none')
 
 const handleVisibleModal = () => {
 
@@ -74,7 +74,7 @@ const handleVisibleModal = () => {
       <div className="main-box">
         <div className="clases-header">
           <h1>All Classes</h1>
-          <button  >CREATE</button>
+          <button onClick={()=> setVisibleModal('d-block')} >CREATE</button>
         </div>
         <div className="items container-85">
           {smallData.map((item) => (
@@ -102,12 +102,12 @@ const handleVisibleModal = () => {
           ))}
         </div>
 
-        <div className="">
+        <div className={visibleModal}>
           <div className="w-screen"></div>
           <div className="modalWindows class-modal">
             <div className="modal-title">
               <h1>Create Class</h1>
-              <span className="closeModal">{deleteIcon}</span>
+              <span onClick={() => setVisibleModal('d-none')} className="closeModal">{deleteIcon}</span>
             </div>
 
             <div className="modal-content">
