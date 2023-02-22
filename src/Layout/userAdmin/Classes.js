@@ -15,9 +15,7 @@ import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
 function Classes() {
   const [visibleModal,setVisibleModal] = useState('d-none')
 
-const handleVisibleModal = () => {
 
-}
 
   const smallData = [
     {

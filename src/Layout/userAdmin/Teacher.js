@@ -1,9 +1,11 @@
-import React from "react";
-import { phoneIcon } from "../../Components/icons/svgIcons";
+import React, { useState } from "react";
+import { deleteIcon, phoneIcon } from "../../Components/icons/svgIcons";
 import Navbar from "../../Components/Navbar";
 import userImg from "../../images/navbar-img/userImg.png";
 
 function Teacher() {
+  const [visibleModal, setVisibleModal] = useState("d-none");
+
   return (
     <div className="teacherPage">
       <div className="teacherPageNav">
