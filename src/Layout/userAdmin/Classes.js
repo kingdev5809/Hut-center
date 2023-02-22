@@ -112,7 +112,7 @@ function Classes() {
                 <div className="flex-3">
                   <div className="modal-input">
                     <label>Select teacher</label>
-                    <input type="text" placeholder="Name"/>
+                    <input type="text" placeholder="Name" />
                   </div>
 
                   <div className="modal-input">
@@ -135,6 +135,26 @@ function Classes() {
                       <option value="blue">Blue</option>
                     </select>
                   </div>
+                </div>
+
+                <div className="modal-input">
+                  <label>Choose Studdents</label>
+                  <select className="w-full" name="selectColor" id="color">
+                    <option value="">White</option>
+                    <option value="">Yellow</option>
+                    <option value="red">Red</option>
+                    <option value="green">green</option>
+                    <option value="blue">Blue</option>
+                  </select>
+                </div>
+                <div className="modal-input">
+                  <label>Choose Students</label>
+                  <textarea className="w-full" name="" id="" cols="30" rows="4"></textarea>
+                </div>
+
+                <div className="btn-group">
+                  <button>DELELTE</button>
+                  <button className="btn-2">SAVE</button>
                 </div>
               </form>
             </div>

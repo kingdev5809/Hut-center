@@ -148,41 +148,70 @@ body::-webkit-scrollbar {
   }
   .modal-content {
     margin: 20px 0;
-    .flex-3{
+    .flex-3 {
       display: flex;
       justify-content: space-between;
     }
-    label {
-      display: block;
+    .modal-input {
+      margin: 10px 0;
+      label {
+        display: block;
+      }
+      .w-full {
+        width: 100%;
+      }
+      input {
+        border-radius: 50px;
+        border: 1px solid #b7b7b7;
+        outline: 2px solid transparent;
+        padding: 5px;
+        font-size: 12px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin: 5px 0;
+      }
+
+      select {
+        border-radius: 50px;
+        border: 1px solid #b7b7b7;
+        outline: 2px solid transparent;
+        padding: 5px;
+        font-size: 12px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 0.75rem;
+        padding-right: 0.75rem;
+        margin: 5px 0;
+        width: 100%;
+      }
+      textarea {
+        outline: 2px solid transparent;
+        outline-offset: 2px;
+        padding: 0.75rem;
+        border: 1px solid #b7b7b7;
+        border-radius: 10px;
+      }
     }
-    .w-full {
-      width: 100%;
-    }
-    input {
-      border-radius: 50px;
-      border: 1px solid #b7b7b7;
-      outline: 2px solid transparent;
-      padding: 5px;
-      font-size: 12px;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      margin: 5px 0;
-    }
-    
-    select{
-      border-radius: 50px;
-      border: 1px solid #b7b7b7;
-      outline: 2px solid transparent;
-      padding: 5px;
-      font-size: 12px;
-      padding-top: 0.5rem;
-      padding-bottom: 0.5rem;
-      padding-left: 0.75rem;
-      padding-right: 0.75rem;
-      margin: 5px 0;
-      width: 100%;
+    .btn-group {
+      display: flex;
+      justify-content: space-between;
+      button {
+        padding: 5px 75px;
+        border-radius: 50px;
+        font-size: 1.125rem;
+        line-height: 1.75rem;
+        outline: none;
+        border: 1px solid #c2d1d4;
+        background-color: transparent;
+        cursor: pointer;
+      }
+      .btn-2{
+        background-color: #ff7b54;
+        border: none;
+        color: white;
+      }
     }
   }
 }
