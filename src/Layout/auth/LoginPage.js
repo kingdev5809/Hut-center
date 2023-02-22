@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "../layout.scss";
+import "../layout.css";
 
 import backImg from "../../images/login-page-img.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";

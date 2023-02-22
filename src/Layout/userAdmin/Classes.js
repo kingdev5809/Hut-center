@@ -5,7 +5,7 @@ import {
   studentIcon,
 } from "../../Components/icons/svgIcons";
 import Navbar from "../../Components/Navbar";
-import "../layout.scss";
+import "../layout.css";
 import userImg from "../../images/navbar-img/userImg.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
