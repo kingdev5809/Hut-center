@@ -64,7 +64,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link href="#">
+            <Link >
               <span>{locationIcon}</span>
               <p>location</p>
             </Link>
