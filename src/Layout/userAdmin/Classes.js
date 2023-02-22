@@ -7,6 +7,10 @@ import {
 import Navbar from "../../Components/Navbar";
 import "../layout.scss";
 import userImg from "../../images/navbar-img/userImg.png";
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faChevronUp } from "@fortawesome/free-solid-svg-icons";
+
+
 
 function Classes() {
   const smallData = [
@@ -92,7 +96,7 @@ function Classes() {
           ))}
         </div>
 
-        <div className="d-none">
+        <div className="">
           <div className="w-screen"></div>
           <div className="modalWindows class-modal">
             <div className="modal-title">
@@ -104,7 +108,36 @@ function Classes() {
               <form action="">
                 <div className="modal-input">
                   <label>Class name</label>
-                  <input type="text" placeholder="Name" />
+                  <input className="w-full" type="text" placeholder="Name" />
+                </div>
+
+                <div className="flex-3">
+                  <div className="modal-input">
+                    <label>Select teacher</label>
+                    <div className="select-box">
+                        <div className="select-head">
+                          <p>Yellow</p>
+                          <i><FontAwesomeIcon icon={faChevronUp}/></i>
+                        </div>
+                        <div className="select-content">
+                            <p>Yellow</p>
+                            <p>Red</p>
+                            <p>Green</p>
+                            <p>Blue</p>
+                        </div>
+
+                    </div>
+                  </div>
+
+                  <div className="modal-input">
+                    <label>Select BG color</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
                 </div>
               </form>
             </div>
