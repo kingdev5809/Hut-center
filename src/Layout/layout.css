@@ -376,7 +376,7 @@ body::-webkit-scrollbar {
 .classes-page .clases-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 40px;
 }
 .classes-page .clases-header h1 {
   font-weight: 500;
@@ -391,7 +391,7 @@ body::-webkit-scrollbar {
 }
 .classes-page .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(33%, 1fr));
   gap: 1rem;
 }
 .classes-page .items .item {
@@ -459,7 +459,7 @@ body::-webkit-scrollbar {
 }
 @media screen and (min-width: 1600px) {
   .classes-page .items .item {
-    width: 450px;
+    width: 100%;
   }
 }
 @media screen and (max-width: 1200px) {
@@ -490,15 +490,12 @@ body::-webkit-scrollbar {
   display: flex;
 }
 .teacherPage .teacherPageNav {
-  width: 21%;
-}
-.teacherPage .teacherPageMain {
-  width: 70%;
+  width: 20%;
 }
 .teacherPage .teacherPageMain .teacher-header {
   display: flex;
   justify-content: space-between;
-  padding-top: 20px;
+  padding-top: 40px;
 
   margin: auto;
 }
@@ -516,13 +513,13 @@ body::-webkit-scrollbar {
 }
 .teacherPage .teacherPageMain .items {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(25%, 1fr));
   gap: 1rem;
   margin-top: 30px;
 }
 .teacherPage .teacherPageMain .items .item {
   background-color: #fff;
-  width: 250px;
+  width: 100%;
   text-align: center;
   padding: 20px;
   border-radius: 1.5rem;
@@ -682,15 +679,13 @@ body::-webkit-scrollbar {
   width: 21%;
 }
 .locationPage .locationMain {
-  width: 80%;
 }
 .locationPage .locationMain .header {
   display: flex;
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 20px;
-  max-width: 90%;
-  margin: auto;
+  
 }
 .locationPage .locationMain .header h1 {
   font-weight: 500;

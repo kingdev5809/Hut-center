@@ -8,8 +8,8 @@ function Location() {
       <div className="locationNav">
         <Navbar />
       </div>
-      <div className="locationMain">
-        <div className="header">
+      <div className="locationMain  container">
+        <div className="header ">
           <h1>All Classes</h1>
           <button>Create</button>
         </div>
