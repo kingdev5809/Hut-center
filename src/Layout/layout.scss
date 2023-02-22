@@ -529,14 +529,14 @@ body::-webkit-scrollbar{
       display: grid;
       grid-template-columns: repeat(3, 1fr);
       margin: auto;
-      max-width: 80%;
+      max-width: 70%;
       .item {
         background-color: #fff;
         width: 250px;
         text-align: center;
         padding: 20px;
         border-radius: 1.5rem;
-        margin: 10px;
+        margin: 5px;
         h2 {
           font-size: 1.25rem;
           line-height: 1.75rem;

@@ -8,10 +8,7 @@ import Navbar from "../../Components/Navbar";
 import "../layout.scss";
 import userImg from "../../images/navbar-img/userImg.png";
 
-
 function Classes() {
-
-  
   const smallData = [
     {
       title: "Engelska A2",
