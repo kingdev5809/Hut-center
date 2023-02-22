@@ -24,6 +24,7 @@ body {
 .main-box {
   padding: 50px 30px;
   width: 75%;
+  position: relative;
 }
 
 // For mobile devices: 320px to 480px.
@@ -33,10 +34,10 @@ body {
 
 // ************Navbar component start*******\\
 .navbar-component {
-  width: 100%;
+  width: 20%;
   min-height: 100vh;
   background-color: #f1f5f1;
-
+  position: fixed;
   .navbar-header {
     background-color: #f5cfc5;
     height: 350px;
@@ -94,6 +95,60 @@ body {
 }
 
 // /////////// *Navbar component end* \\\\\\\\\\\\\\
+
+// /////////// *Modal component start* \\\\\\\\\\\\\\
+
+.d-none{
+  display: none;
+
+}
+
+.d-block{
+  display: block;
+}
+.w-screen {
+  position: fixed;
+  background-color: black;
+  opacity: 0.25;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 20%;
+}
+.modalWindows {
+  z-index: 999;
+  position: absolute;
+  top: 1.625rem;
+  background-color: #fff;
+  padding: 2.5rem;
+  border-radius: 40px;
+  width: 600px;
+  left: 0;
+  right: 0;
+  .modal-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    h1 {
+      font-size: 1.875rem;
+      font-weight: 500;
+      line-height: 2.25rem;
+      margin: 20px 0;
+    }
+  }
+  label {
+    display: block;
+  }
+  input {
+    border-radius: 100px;
+    border-color: #c9c9c9;
+    outline: none;
+    padding: 5px;
+    font-size: 12px;
+  }
+}
+
+// /////////// *Modal component end* \\\\\\\\\\\\\\
 
 // ***********Login page start ************ \\
 .login-page {
@@ -314,6 +369,7 @@ body {
       cursor: pointer;
     }
   }
+
   .items {
     max-width: 90%;
     margin: auto 0;
@@ -640,23 +696,23 @@ body {
         margin: auto 0;
       }
     }
-    .main{
+    .main {
       max-width: 90%;
       margin: auto;
-      .items{
+      .items {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
-        .item{
+        grid-template-columns: repeat(2, 1fr);
+        .item {
           padding: 10px 5px;
           margin: 10px;
           display: flex;
           align-items: center;
           background-color: #fff;
           border-radius: 11px;
-          svg{
+          svg {
             width: 3.5rem;
           }
-          p{
+          p {
             margin-left: 10px;
           }
         }

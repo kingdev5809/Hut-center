@@ -8,7 +8,18 @@ import Navbar from "../../Components/Navbar";
 import "../layout.scss";
 import userImg from "../../images/navbar-img/userImg.png";
 
+
 function Classes() {
+const [visibleModal, setVisibleModal] = useState('d-none')
+
+  
+function createClass() {
+  if (visibleModal == 'd-none') {
+      setVisibleModal('d-block')
+  }else{
+    setVisibleModal('d-none')
+  }
+}
   const smallData = [
     {
       title: "Engelska A2",
@@ -64,7 +75,7 @@ function Classes() {
       <div className="main-box">
         <div className="clases-header">
           <h1>All Classes</h1>
-          <button>CREATE</button>
+          <button onClick={createClass} >CREATE</button>
         </div>
         <div className="items">
           {smallData.map((item) => (
@@ -90,6 +101,25 @@ function Classes() {
               <div className="item-box-2"></div>
             </div>
           ))}
+        </div>
+
+        <div className="d-none">
+          <div className="w-screen"></div>
+          <div className="modalWindows class-modal">
+            <div className="modal-title">
+              <h1>Create Class</h1>
+              <span>{deleteIcon}</span>
+            </div>
+
+            <div className="modal-content">
+              <form action="">
+                <div className="modal-input">
+                  <label>Class name</label>
+                  <input type="text" placeholder="Name" />
+                </div>
+              </form>
+            </div>
+          </div>
         </div>
       </div>
     </div>
