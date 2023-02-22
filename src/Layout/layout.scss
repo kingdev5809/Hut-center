@@ -385,7 +385,7 @@ body {
       box-shadow: 5px 5px 13px 2px #00000040;
       border-radius: 1rem;
       width: 500px;
-      margin: 5px;
+      margin: 10px;
 
       img {
         width: 64px;
@@ -593,7 +593,8 @@ body {
     }
 
     .main {
-      
+      width: 90%;
+      margin: auto;
 
       .items {
         display: grid;
