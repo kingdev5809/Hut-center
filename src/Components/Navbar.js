@@ -64,7 +64,7 @@ function Navbar() {
             </Link>
           </li>
           <li>
-            <Link >
+            <Link to={`/admin/location`}>
               <span>{locationIcon}</span>
               <p>location</p>
             </Link>

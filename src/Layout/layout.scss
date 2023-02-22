@@ -74,16 +74,16 @@ body {
       padding-top: 50px;
       li {
         padding: 10px 30px;
-        &:hover{
+        &:hover {
           color: #ee6c4d;
         }
         a {
           display: flex;
           color: black;
-          &:hover{
+          &:hover {
             color: #ee6c4d;
           }
-          
+
           p {
             margin-left: 15px;
           }
@@ -541,7 +541,7 @@ body {
 
       .items {
         display: grid;
-        grid-template-columns: repeat(2,1fr);
+        grid-template-columns: repeat(2, 1fr);
         .item {
           padding: 1.25rem;
           border-radius: 10px;
@@ -582,7 +582,7 @@ body {
             .itemBtn {
               display: flex;
               justify-content: flex-end;
-              div{
+              div {
                 padding: 5px;
               }
               .btn1 {
@@ -591,8 +591,6 @@ body {
                 svg {
                   width: 1rem;
                   margin-right: 5px;
-
-                  
                 }
               }
               .btn2 {
@@ -612,3 +610,59 @@ body {
 }
 
 // ///////// Students  page end \\\\\\\\\\\\\\\
+
+// ///////// Location   page start \\\\\\\\\\\\\\\
+.locationPage {
+  display: flex;
+
+  .locationNav {
+    width: 21%;
+  }
+  .locationMain {
+    width: 80%;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      padding-top: 40px;
+      padding-bottom: 20px;
+      max-width: 90%;
+      margin: auto;
+      h1 {
+        font-weight: 500;
+      }
+      button {
+        background-color: #ee6c4d;
+        padding: 7px 25px;
+        border-radius: 30px;
+        border: none;
+        color: white;
+        cursor: pointer;
+        margin: auto 0;
+      }
+    }
+    .main{
+      max-width: 90%;
+      margin: auto;
+      .items{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        .item{
+          padding: 10px 5px;
+          margin: 10px;
+          display: flex;
+          align-items: center;
+          background-color: #fff;
+          border-radius: 11px;
+          svg{
+            width: 3.5rem;
+          }
+          p{
+            margin-left: 10px;
+          }
+        }
+      }
+    }
+  }
+}
+
+// ///////// Location   page end \\\\\\\\\\\\\\\
