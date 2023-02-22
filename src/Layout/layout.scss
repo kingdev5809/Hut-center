@@ -18,7 +18,7 @@ body {
   max-width: 75%;
   margin: auto;
 }
-.container-85{
+.container-85 {
   max-width: 85%;
   margin: auto;
 }
@@ -144,18 +144,28 @@ body::-webkit-scrollbar {
       font-size: 1.875rem;
       font-weight: 500;
       line-height: 2.25rem;
-      margin: 20px 0;
     }
   }
-  label {
-    display: block;
-  }
-  input {
-    border-radius: 100px;
-    border-color: #c9c9c9;
-    outline: none;
-    padding: 5px;
-    font-size: 12px;
+  .modal-content {
+    margin: 20px 0;
+    label {
+      display: block;
+    }
+    input {
+      border-radius: 50px;
+      border: 1px solid #b7b7b7;
+      outline: 2px solid transparent;
+      padding: 5px;
+      font-size: 12px;
+      padding-top: 0.5rem;
+      padding-bottom: 0.5rem;
+      padding-left: 0.75rem;
+      padding-right: 0.75rem;
+      margin: 5px 0;
+    }
+    input.w-full {
+      width: 100%;
+    }
   }
 }
 
@@ -464,7 +474,7 @@ body::-webkit-scrollbar {
 @media screen and (min-width: 1600px) {
   .classes-page {
     .items {
-     // grid-template-columns: repeat(3, 1fr);
+      // grid-template-columns: repeat(3, 1fr);
       .item {
         width: 450px;
       }
@@ -532,9 +542,9 @@ body::-webkit-scrollbar {
     }
     .items {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  
-      gap: 1rem;      
-      
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      gap: 1rem;
+
       .item {
         background-color: #fff;
         width: 250px;
@@ -574,8 +584,6 @@ body::-webkit-scrollbar {
 }
 
 // ///////// Teacher  page end \\\\\\\\\\\\\\\
-
-
 
 // ///////// Students  page start \\\\\\\\\\\\\\\
 .studentsPage {
