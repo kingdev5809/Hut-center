@@ -135,20 +135,22 @@ body::-webkit-scrollbar {
 .modalWindows .modal-content {
   margin: 20px 0;
 }
-.modalWindows .modal-content .flex-3 {
+.modalWindows .w-full {
+  width: 100%;
+}
+.modalWindows .modal-content .flex {
   display: flex;
   justify-content: space-between;
 }
+
 .modalWindows .modal-content .modal-input {
-  margin: 10px 0;
+  margin: 10px 5px;
 }
 .modalWindows .modal-content .modal-input label {
   display: block;
   font-size: 12px;
 }
-.modalWindows .modal-content .modal-input .w-full {
-  width: 100%;
-}
+
 .modalWindows .modal-content .modal-input input {
   border-radius: 50px;
   border: 1px solid #b7b7b7;
@@ -160,6 +162,10 @@ body::-webkit-scrollbar {
   padding-left: 0.75rem;
   padding-right: 0.75rem;
   margin: 5px 0;
+}
+.modalWindows .modal-content .modal-input input[type="file"]{
+   background-color: transparent;
+   
 }
 .modalWindows .modal-content .modal-input select {
   border-radius: 50px;
@@ -391,7 +397,7 @@ body::-webkit-scrollbar {
 }
 .classes-page .items {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
 }
 .classes-page .items .item {
@@ -513,7 +519,7 @@ body::-webkit-scrollbar {
 }
 .teacherPage .teacherPageMain .items {
   display: grid;
-  grid-template-columns: repeat(2,1fr);
+  grid-template-columns: repeat(2, 1fr);
   gap: 1rem;
   margin-top: 30px;
 }
@@ -685,7 +691,6 @@ body::-webkit-scrollbar {
   justify-content: space-between;
   padding-top: 40px;
   padding-bottom: 20px;
-  
 }
 .locationPage .locationMain .header h1 {
   font-weight: 500;

@@ -14,7 +14,7 @@ function Teacher() {
       <div className="teacherPageMain container">
         <div className="teacher-header ">
           <h1>Responsible staff and teachers</h1>
-          <button  onClick={()=> setVisibleModal('d-block')}>CREATE</button>
+          <button onClick={() => setVisibleModal("d-block")}>CREATE</button>
         </div>
 
         <div className="items container-85">
@@ -87,58 +87,37 @@ function Teacher() {
 
             <div className="modal-content">
               <form action="">
-                <div className="modal-input">
-                  <label>Class name</label>
-                  <input className="w-full" type="text" placeholder="Name" />
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
                 </div>
 
-                <div className="flex-3">
-                  <div className="modal-input">
-                    <label>Select teacher</label>
-                    <input type="text" placeholder="Name" />
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
                   </div>
 
-                  <div className="modal-input">
-                    <label>Select BG color</label>
-                    <select className="w-full" name="selectColor" id="color">
-                      <option value="">Yellow</option>
-                      <option value="red">Red</option>
-                      <option value="green">green</option>
-                      <option value="blue">Blue</option>
-                    </select>
-                  </div>
-
-                  <div className="modal-input">
-                    <label>Text color</label>
-                    <select className="w-full" name="selectColor" id="color">
-                      <option value="">White</option>
-                      <option value="">Yellow</option>
-                      <option value="red">Red</option>
-                      <option value="green">green</option>
-                      <option value="blue">Blue</option>
-                    </select>
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
                   </div>
                 </div>
 
                 <div className="modal-input">
                   <label>Choose Studdents</label>
-                  <select className="w-full" name="selectColor" id="color">
-                    <option value="">White</option>
-                    <option value="">Yellow</option>
-                    <option value="red">Red</option>
-                    <option value="green">green</option>
-                    <option value="blue">Blue</option>
-                  </select>
+                  <input className="w-full" type="text" placeholder="Name" />
                 </div>
                 <div className="modal-input">
                   <label>Choose Students</label>
-                  <textarea
-                    className="w-full"
-                    name=""
-                    id=""
-                    cols="30"
-                    rows="4"
-                  ></textarea>
+                  <input className="w-full" type="file" placeholder="Name"  />
                 </div>
 
                 <div className="btn-group">

@@ -1,9 +1,11 @@
-import React from "react";
+import React, { useState } from "react";
 import { deleteIcon, editIcon } from "../../Components/icons/svgIcons";
 import Navbar from "../../Components/Navbar";
 import userImg from "../../images/navbar-img/userImg.png";
 
 function Students() {
+  const [visibleModal, setVisibleModal] = useState("d-none");
+
   const smallData = [
     {
       telefon: "+998949179933",
@@ -46,7 +48,7 @@ function Students() {
       <div className="studentsPageMain container">
         <div className="header">
           <h1>All Students </h1>
-          <button>CREATE</button>
+          <button onClick={() => setVisibleModal('d-block')}>CREATE</button>
         </div>
         <div className="main">
           <div className="items">
@@ -93,6 +95,86 @@ function Students() {
                 </div>
               </div>
             ))}
+          </div>
+        </div>
+      </div>
+
+      <div className={visibleModal}>
+        <div
+          onClick={() => setVisibleModal("d-none")}
+          className="w-screen"
+        ></div>
+        <div className="modalWindows class-modal">
+          <div className="modal-inner">
+            <div className="modal-title">
+              <h1>Create Class</h1>
+              <span
+                onClick={() => setVisibleModal("d-none")}
+                className="closeModal"
+              >
+                {deleteIcon}
+              </span>
+            </div>
+
+            <div className="modal-content">
+              <form action="">
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+                </div>
+
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+                </div>
+
+                <div className="modal-input">
+                  <label>Choose Studdents</label>
+                  <input className="w-full" type="text" placeholder="Name" />
+                </div>
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+                </div>
+                <div className="flex ">
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+
+                  <div className="modal-input w-full">
+                    <label>Class name</label>
+                    <input className="w-full" type="text" placeholder="Name" />
+                  </div>
+                </div>
+
+                <div className="btn-group">
+                  <button>DELELTE</button>
+                  <button className="btn-2">SAVE</button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </div>
