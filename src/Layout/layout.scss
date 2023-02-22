@@ -29,6 +29,10 @@ body {
 
 }
 
+body::-webkit-scrollbar{
+  display: none;
+}
+
 // For mobile devices: 320px to 480px.
 // For tablets and ipads: 481px to 768px.
 // For laptops: 769px to 1024px.
@@ -516,7 +520,7 @@ body {
         border-radius: 30px;
         border: none;
         color: white;
-        margin: auto;
+        margin: auto 0;
         cursor: pointer;
       }
     }
