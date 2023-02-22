@@ -43,7 +43,7 @@ function Students() {
       <div className="studentsPageNav">
         <Navbar />
       </div>
-      <div className="studentsPageMain">
+      <div className="studentsPageMain container">
         <div className="header">
           <h1>All Students </h1>
           <button>CREATE</button>

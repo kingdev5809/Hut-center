@@ -4,7 +4,6 @@
   box-sizing: border-box;
   text-decoration: none;
   list-style-type: none;
-  
 }
 $berakpoint-deskop-min: 1025px;
 $berakpoint-deskop-max: 1200px;
@@ -14,6 +13,14 @@ $berakpoint-mobile: 350px;
 body {
   background-color: #f5f7fb;
   font-family: sans-serif;
+}
+.container {
+  max-width: 75%;
+  margin: auto;
+}
+.container-85{
+  max-width: 85%;
+  margin: auto;
 }
 .flex {
   display: flex;
@@ -26,10 +33,9 @@ body {
   padding: 50px 30px;
   width: 75%;
   position: relative;
-
 }
 
-body::-webkit-scrollbar{
+body::-webkit-scrollbar {
   display: none;
 }
 
@@ -104,12 +110,11 @@ body::-webkit-scrollbar{
 
 // /////////// *Modal component start* \\\\\\\\\\\\\\
 
-.d-none{
+.d-none {
   display: none;
-
 }
 
-.d-block{
+.d-block {
   display: block;
 }
 .w-screen {
@@ -379,10 +384,9 @@ body::-webkit-scrollbar{
   }
 
   .items {
-    max-width: 90%;
-    margin: auto 0;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+    gap: 1rem;
     .item {
       position: relative;
       background-color: #fff;
@@ -459,7 +463,7 @@ body::-webkit-scrollbar{
 @media screen and (min-width: 1600px) {
   .classes-page {
     .items {
-      grid-template-columns: repeat(3, 1fr);
+     // grid-template-columns: repeat(3, 1fr);
       .item {
         width: 450px;
       }
@@ -527,9 +531,9 @@ body::-webkit-scrollbar{
     }
     .items {
       display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      margin: auto;
-      max-width: 70%;
+      grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));  
+      gap: 1rem;      
+      
       .item {
         background-color: #fff;
         width: 250px;
@@ -577,15 +581,12 @@ body::-webkit-scrollbar{
     width: 21%;
   }
   .studentsPageMain {
-    width: 70%;
-    margin: 0 auto;
     .header {
       display: flex;
       justify-content: space-between;
       padding-top: 40px;
       padding-bottom: 20px;
-      
-      
+
       h1 {
         font-weight: 500;
       }
@@ -611,7 +612,7 @@ body::-webkit-scrollbar{
           width: 95%;
           border-radius: 10px;
           background-color: #fff;
-          
+
           margin: 10px 0;
           .title {
             display: flex;

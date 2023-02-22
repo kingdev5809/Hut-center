@@ -15,8 +15,8 @@ function Teacher() {
             <button>CREATE</button>
         </div>
 
-        <div className="items">
-          <div className="item">
+        <div className="items container-85">
+          <div className="item ">
             <img src={userImg} alt="" />
             <h2>Shermorad Holmadov</h2>
             <h4>Teacher</h4>

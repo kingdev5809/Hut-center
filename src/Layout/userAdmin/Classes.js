@@ -66,7 +66,7 @@ function Classes() {
           <h1>All Classes</h1>
           <button>CREATE</button>
         </div>
-        <div className="items">
+        <div className="items container-85">
           {smallData.map((item) => (
             <div className="item">
               <img src={userImg} alt="" />
