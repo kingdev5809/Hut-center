@@ -74,7 +74,7 @@ function Classes() {
           <h1>All Classes</h1>
           <button onClick={()=> setVisibleModal('d-block')} >CREATE</button>
         </div>
-        <div className="items container-85">
+        <div className="items container-95">
           {smallData.map((item) => (
             <div className="item">
               <img src={userImg} alt="" />
